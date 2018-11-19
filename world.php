@@ -17,7 +17,7 @@ if( $query2 == true){
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
     echo '<ul>';
     foreach ($results as $row) {
-    echo '<li id="ya">' . $row['name'] . ' is ruled by ' . $row['head_of_state'] . '</li>';
+    echo '<li id="ya">' . $row['name'] . ' is ruled by ' . $row['head_of_state'] . ' and has a ' . $row['government_form'] . ' style of government with a population of ' . $row['population'] . '</li>';
     }
     echo '</ul>';
 
@@ -28,7 +28,7 @@ if( $query2 == true){
 
     echo '<ul>';
     foreach ($results as $row) {
-    echo '<li id="ya">' . $row['name'] . ' is ruled by ' . $row['head_of_state'] . '</li>';
+    echo '<li id="ya">' . $row['name'] . ' is ruled by ' . $row['head_of_state'] . 'and has a ' . $row['government_form'] . 'style of government with a population of ' . $row['population'] . '</li>';
     }
     echo '</ul>';
 }
